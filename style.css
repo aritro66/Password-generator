@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: #333;
+    padding: 25px;
+    color: #ffffff;
+    text-align: center;
+    height: 10vh;
+    font-size: 4vh;
+    
+}
+button{
+    cursor: pointer;
+}
+#info{
+    font-family: 'Headland One', serif;
+    padding: 20px;
+    word-spacing: 5px;
+}
+#info p:nth-child(1){
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+}
+#generate{
+    height: 80vh;
+    width: 100%;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px;
+    font-size: 27px;
+    color: #f2f2f2;
+}
+#make{
+    height: 40px;
+    background-color: transparent;
+    border: 3.5px solid white;
+    border-radius: 4px;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#make::before{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 15px;
+    left:-20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    top:0px;
+    transform: skewX(-20deg);
+    transition-duration: 0.6s;
+    transition-timing-function: linear;
+}
+#make:hover::before{
+    left:120px;
+    /* transform: 1s; */
+}
+#generate input[type="checkbox"]
+{
+    height: 20px;
+    width: 20px;
+}
+#slider{
+    width: 75vw;
+    /* min-width: 50px; */
+}
+#password{
+    overflow: hidden;
+    height: 30px;
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+    /* display: inline-bloc; */
+    /* border: 1px solid black; */
+    border: none;
+
+}
+#copy{
+    height: 30px;
+    width: 30px;
+    background-image: url(copy.png);
+    background-repeat: none;
+    background-size: 100% 100%;
+    border: none;
+    margin-left: 5px;
+    
+}
+#copy:hover{
+    transform: scale(1.2);
+}
+#stats{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:800px) {
+    #slider{
+        width: 57vw;
+    }
+
+}
+@media screen and (max-width:435px) {
+    #slider{
+        width: 45vw;
+    }
+    #generate{
+        font-size: 22px;
+    }
+
+}
