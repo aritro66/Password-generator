@@ -99,9 +99,7 @@ button{
     /* margin-left: 5px; */
     
 }
-#copy:hover{
-    transform: scale(1.2);
-}
+
 #stats{
     height: 44px;
     display: flex;
