@@ -14,20 +14,25 @@
     <h1>Secure Password</h1>
     <div id="generate">
         <br><br>
-        <input type="range" min=1 max=32 value=10 name="" id="slider"> <span id="pointer"></span>
+        <input type="range" min=1 max=32 value=10 name="" class="slider"> <span id="pointer"></span>
         <br><br>
-        <input type="checkbox" name="" id="" checked disabled>Number(eg. 123..)<br>
-        <input type="checkbox" name="" id="">Alphabets lowercase(eg. abc...)<br><input type="checkbox" name="" id="">Alphabets uppercase(eg. ABC...)<br>
-        <input type="checkbox" name="" id="">Symbols<br><br><br>
+        
+        <div class="form__wrapper">
+            
+            <div class="option__wrapper">
+                <input type="checkbox" name="" id="option" checked disabled>Number(eg. 123..)
+                <input type="checkbox" name="" id="option">Alphabets lowercase(eg. abc...)<input type="checkbox" name="" id="">Alphabets uppercase(eg. ABC...)<br>
+                <input type="checkbox" name="" id="option">Symbols
+            </div>
 
             <div id="stats">
-
                 <input id="password"></input>
                 <button id="copy" title="Copy"></button>
             </div>
             <br><br>
             <button id="make">Generate</button>
             <p id="copy_stats"></p>
+        </div>
         
     </div>
     <div id="info">
