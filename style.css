@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap'); */
 *{
     padding: 0;
     margin:0;
@@ -23,7 +23,7 @@ button{
     cursor: pointer;
 }
 #info{
-    font-family: 'Headland One', serif;
+    font-family: 'Rubik', sans-serif;
     padding: 20px;
     word-spacing: 5px;
 }
@@ -167,6 +167,59 @@ button{
     height: 44px;
     display: flex;
     align-items: center;
+}
+
+/* Adding the footer styling  */
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: #52527a;
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu a{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.menu a:hover{
+    color: #52527a;
+    transition: 0.5s;
+}
+
+.footer-copyright{
+    background-color:#52527a;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
 }
 @media screen and (max-width:800px) {
     #slider{
